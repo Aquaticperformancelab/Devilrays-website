@@ -48,8 +48,8 @@ const ANNOUNCEMENTS = [
   {date:"2026-11-11", cat:"club", title:"Season 2026–2027 Dimulai Desember",
    body:"Musim latihan perdana berjalan Desember 2026 hingga November 2027, dengan periodisasi yang memperhitungkan kalender sekolah dan masa ujian atlet."},
   {date:"2026-11-11", cat:"adjust", title:"Jadwal Latihan Saat Ramadan",
-   body:"Ramadan 1448 H diperkirakan mulai 8 Februari 2027. Jam dan beban latihan selama Ramadan akan disesuaikan dan diumumkan menjelang bulan puasa."}
-   {date:"2026-11-17", cat:"competition", title:"KRAPSI Piala KONI PUSAT",
+   body:"Ramadan 1448 H diperkirakan mulai 8 Februari 2027. Jam dan beban latihan selama Ramadan akan disesuaikan dan diumumkan menjelang bulan puasa."},
+   {date:"2026-11-17", cat:"meet", title:"KRAPSI Piala KONI PUSAT",
    body:"Event Nasional : KRAPSI Piala KONI PUSAT 18 - 20 Desember. Mandatory Event for Performance Squad"}
    
 ];
@@ -58,7 +58,7 @@ const ANNOUNCEMENTS = [
 const EVENTS = [
   {date:"2026-12-07", cat:"club", title:"Pendaftaran atlet dibuka", note:"Angkatan pertama: Competitive Development & Performance Squad"},
   {date:"2026-12-01", cat:"club", title:"Awal Season 2026–2027", note:"Mulai fase persiapan umum"},
-  {date:"2026-12-18", end:"2026-12-20, "cat:"competition", title:"KRAPSI Piala KONI PUSAT 18-20 Desember", note:"Mandatory Event for Performance Squad"}
+  {date:"2026-12-18", end:"2026-12-20, "cat:"meet", title:"KRAPSI Piala KONI PUSAT 18-20 Desember", note:"Mandatory Event for Performance Squad"},
   {date:"2026-12-25", cat:"holiday", title:"Hari Raya Natal", note:"Libur nasional"},
   {date:"2027-01-01", cat:"holiday", title:"Tahun Baru 2027", note:"Libur nasional"},
   {date:"2027-02-08", end:"2027-03-08", cat:"adjust", title:"Ramadan 1448 H (perkiraan)", note:"Jadwal & beban latihan disesuaikan"},
