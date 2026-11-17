@@ -945,7 +945,10 @@ footer{background:var(--abyss);color:#9FB2D2;padding:60px 0 30px}
 window.__dataErr=[];
 window.addEventListener("error",function(e){ if(e.filename && /data\.js/.test(e.filename)) window.__dataErr.push("Baris "+e.lineno+": "+e.message); });
 </script>
-<script src="data.js"></script>
+<script>
+/* Ambil data.js versi terbaru setiap kali halaman dibuka (melewati cache browser/GitHub) */
+document.write('<script src="data.js?v='+Date.now()+'"><\/script>');
+</script>
 <script>
 /* =========================================================
    MEMBACA DATA (aman walau data.js berisi salah ketik)
