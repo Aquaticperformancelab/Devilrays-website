@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devilrays Aquatics — Chasing Legacy</title>
+<!-- VERSI UJI COBA: hapus baris robots di bawah ini saat launching resmi di devilrays.id -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Devilrays Aquatics: klub renang small-group di Semarang dengan kurikulum berjenjang LTAD. Chasing Legacy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --abyss:#050E22; --navy:#0B1B3A; --navy-2:#11264F; --royal:#1E5BD8; --cyan:#22C1EE; --cyan-soft:#9BE6FA;
+  --red:#E53945; --amber:#F2A93B; --violet:#8B7CF6;
+  --foam:#F4F8FC; --ink:#0B1B3A; --muted:#5B6B86; --line:#DCE5F0;
+  --radius:18px; --max:1160px;
+  --display:"Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body:"Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--foam);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.02;margin:0;letter-spacing:.3px}
+h2{font-size:clamp(38px,6vw,64px);text-transform:uppercase;font-weight:800}
+h3{font-size:26px;font-weight:700;text-transform:uppercase}
+.eyebrow{font-family:var(--display);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:15px;color:var(--royal);display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.eyebrow::before{content:"";width:28px;height:3px;background:currentColor;border-radius:2px}
+.dark .eyebrow{color:var(--cyan)}
+.lead{font-size:19px;color:var(--muted);max-width:640px}
+.dark .lead{color:#B8C7E0}
+section{padding:96px 0;position:relative}
+.dark{background:var(--navy);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:1px;text-transform:uppercase;padding:14px 26px;border-radius:999px;border:2px solid transparent;text-decoration:none;cursor:pointer;transition:transform .15s, background .15s, color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--cyan);color:var(--abyss)}
+.btn-primary:hover{background:#fff}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fff;background:transparent}
+.btn-ghost:hover{border-color:#fff}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--royal)}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .25s, box-shadow .25s}
+.nav.solid{background:rgba(5,14,34,.92);backdrop-filter:blur(10px);box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.nav .wrap{gap:20px;display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{flex-shrink:0;display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand img{height:34px;width:auto}
+.brand span{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:1.5px}
+.menu{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+.menu a{white-space:nowrap;display:block;color:#D6E2F5;text-decoration:none;font-family:var(--display);font-weight:600;font-size:16px;letter-spacing:.8px;text-transform:uppercase;padding:8px 9px;border-radius:8px}
+.menu a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.menu .cta{background:var(--cyan);color:var(--abyss);margin-left:6px}
+.menu .cta:hover{background:#fff;color:var(--abyss)}
+.burger{display:none;background:none;border:0;color:#fff;padding:8px;cursor:pointer}
+@media (max-width:1300px){
+  .burger{display:block}
+  .menu{position:fixed;top:68px;left:0;right:0;flex-direction:column;background:var(--abyss);padding:12px 18px 22px;gap:2px;transform:translateY(-130%);transition:transform .3s;box-shadow:0 20px 40px rgba(0,0,0,.4)}
+  .menu.open{transform:none}
+  .menu a{font-size:20px;padding:12px}
+  .menu .cta{margin:8px 0 0;text-align:center}
+}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;background:radial-gradient(1200px 600px at 75% 30%, #173A82 0%, transparent 60%), radial-gradient(900px 500px at 10% 90%, #0E3B6E 0%, transparent 60%), var(--abyss);color:#fff;overflow:hidden;padding:110px 0 120px}
+.hero .wrap>*{min-width:0}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(64px,11vw,140px);font-weight:800;text-transform:uppercase;line-height:.88}
+.hero h1 em{font-style:italic;color:var(--cyan);display:block}
+.hero p{font-size:18px;color:#C3D2EA;max-width:540px;margin:14px 0 0}
+.hero p.p2{margin-top:10px}
+.hero .eyebrow{color:var(--cyan)}
+.hero-sub{line-height:1.05;font-family:var(--display);font-weight:700;font-size:clamp(24px,3vw,32px);text-transform:uppercase;margin-top:20px;color:#fff}
+.hero-tag{font-family:var(--display);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan);font-size:17px;margin:20px 0 26px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-logo{filter:drop-shadow(0 30px 60px rgba(34,193,238,.25));animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-14px) rotate(1deg)}}
+.hero-stats{display:flex;gap:28px;margin-top:40px;flex-wrap:wrap}
+.hero-stats div{border-left:3px solid var(--cyan);padding-left:12px}
+.hero-stats b{display:block;font-family:var(--display);font-size:30px;line-height:1}
+.hero-stats span{font-size:14px;color:#9FB2D2;text-transform:uppercase;letter-spacing:1px}
+.waves{position:absolute;left:0;right:0;bottom:-2px;z-index:1;line-height:0}
+.waves svg{width:100%;height:120px}
+.lane-lines{position:absolute;inset:0;background:repeating-linear-gradient(90deg, transparent 0 180px, rgba(255,255,255,.035) 180px 182px);pointer-events:none}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;text-align:left}
+  .hero-logo{max-width:260px;margin:0 auto;order:-1}
+  .hero{padding-top:96px;padding-bottom:150px;min-height:0}
+  .hero-stats{gap:18px}
+}
+
+/* ABOUT */
+.purpose{background:linear-gradient(135deg,var(--navy) 0%,#123a8a 130%);color:#fff;border-radius:28px;padding:44px;margin:40px 0 28px;position:relative;overflow:hidden}
+.purpose::after{content:"";position:absolute;right:-70px;top:-70px;width:280px;height:280px;border-radius:50%;border:42px solid rgba(34,193,238,.10)}
+.kicker{font-family:var(--display);letter-spacing:3px;text-transform:uppercase;font-weight:700;font-size:14px;color:var(--cyan)}
+.purpose blockquote{margin:12px 0 0;font-family:var(--display);font-size:clamp(28px,4vw,46px);line-height:1.06;font-weight:700;max-width:920px;position:relative;z-index:1}
+.purpose .makna{margin:16px 0 0;color:#B8C7E0;max-width:760px;font-size:16.5px;position:relative;z-index:1}
+.impl{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px;position:relative;z-index:1}
+.impl div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px}
+.impl b{display:block;font-family:var(--display);font-size:20px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}
+.impl span{font-size:14px;color:#B8C7E0}
+.vision{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px;margin-bottom:56px}
+.vision .kicker{color:var(--royal);writing-mode:vertical-rl;transform:rotate(180deg);font-size:15px}
+.vision blockquote{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(26px,3.4vw,38px);line-height:1.08;color:var(--navy)}
+.vision p{margin:12px 0 0;color:var(--muted)}
+.subhead{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.subhead h3{font-size:38px;color:var(--navy)}
+.subhead p{margin:0;max-width:560px;color:var(--muted);font-size:15.5px;font-style:italic}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}
+.pillar{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;border-top:4px solid var(--c)}
+.pillar .no{font-family:var(--display);font-weight:800;color:var(--c);font-size:15px;letter-spacing:2px}
+.pillar h4{font-size:23px;text-transform:uppercase;color:var(--navy);margin:4px 0 8px}
+.pillar p{margin:0;font-size:15px;color:#34445F}
+.motto{background:var(--navy);color:#fff;border-radius:var(--radius);padding:20px 26px;font-size:17px;margin-bottom:64px}
+.motto b{color:var(--cyan);font-weight:600}
+.way{background:var(--abyss);color:#fff;border-radius:28px;padding:40px;margin-bottom:56px}
+.way-head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;margin-bottom:28px}
+.way-head h3{font-size:clamp(34px,4.6vw,52px)}
+.way-head .tri{font-family:var(--display);font-weight:700;font-size:22px;line-height:1.15;text-transform:uppercase;color:var(--cyan);text-align:right}
+.values{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.value{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:22px 18px;transition:transform .2s, border-color .2s}
+.value:hover{transform:translateY(-4px);border-color:var(--cyan)}
+.value .vn{font-family:var(--display);font-weight:800;font-size:34px;color:var(--cyan);line-height:1}
+.value h4{font-size:24px;text-transform:uppercase;margin:10px 0 4px;line-height:1}
+.value .tag{font-style:italic;color:var(--cyan-soft);font-size:14.5px}
+.value p{font-size:14.5px;color:#B8C7E0;margin:12px 0 0;padding-top:12px;border-top:1px solid rgba(255,255,255,.1)}
+.promises{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
+.promises .intro p{color:var(--muted);margin:10px 0 0}
+.promise-list{display:grid;gap:10px}
+.promise{display:grid;grid-template-columns:44px 1fr;gap:14px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--cyan);border-radius:14px;padding:16px 20px}
+.promise .pn{font-family:var(--display);font-weight:800;font-size:22px;color:var(--royal)}
+.promise h4{font-size:22px;text-transform:uppercase;color:var(--navy)}
+.promise p{margin:2px 0 0;font-size:15px;color:#34445F}
+.chain{margin-top:56px;text-align:center;font-family:var(--display);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:clamp(15px,2.2vw,22px);color:var(--navy)}
+.chain span{color:var(--royal)}
+@media (max-width:1000px){.values{grid-template-columns:repeat(2,1fr)}.impl{grid-template-columns:repeat(2,1fr)}.pillars{grid-template-columns:repeat(2,1fr)}.promises{grid-template-columns:1fr}.way-head{grid-template-columns:1fr}.way-head .tri{text-align:left}}
+@media (max-width:560px){.values,.impl,.pillars{grid-template-columns:1fr}.purpose,.way{padding:28px 22px}.vision{grid-template-columns:1fr;padding:26px 22px}.vision .kicker{writing-mode:horizontal-tb;transform:none}}
+
+/* LOGO */
+#logo{background:var(--abyss);overflow:hidden}
+.logo-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:40px}
+.manta-stage{position:sticky;top:90px;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,#0E2A5C 0%,#071733 100%)}
+.manta-stage .photo{position:relative;line-height:0}
+.manta-stage .photo img{width:100%;height:auto}
+.manta-stage figcaption{font-size:13px;color:#8FA4C7;padding:14px 20px 16px;text-align:center}
+.spot{position:absolute;transform:translate(-50%,-50%);width:30px;height:30px;border-radius:50%;border:2px solid #fff;background:var(--cyan);color:#051022;font-family:var(--display);font-weight:800;font-size:16px;line-height:1;display:grid;place-items:center;cursor:pointer;padding:0;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.spot::after{content:"";position:absolute;inset:-2px;border-radius:50%;border:2px solid var(--cyan);opacity:0}
+.spot.on{background:#fff}
+.spot.on::after{animation:pulse 1.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.9}100%{transform:scale(2.1);opacity:0}}
+@media (max-width:560px){.spot{width:26px;height:26px;font-size:14px}}
+.meanings{display:grid;gap:14px}
+.meaning{display:grid;grid-template-columns:54px 1fr;gap:16px;padding:22px;border-radius:var(--radius);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);transition:border-color .2s, background .2s}
+.meaning.on{border-color:var(--cyan);background:rgba(34,193,238,.08)}
+.meaning .n{font-family:var(--display);font-size:40px;font-weight:800;color:var(--cyan);line-height:.9}
+.meaning .part{font-family:var(--display);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:13px;color:#8FA4C7}
+.meaning h4{font-size:24px;text-transform:uppercase;margin:2px 0 6px}
+.meaning p{margin:0;color:#B8C7E0;font-size:16px}
+.meaning .fact{display:inline-block;margin-top:10px;font-size:13px;color:var(--cyan-soft);background:rgba(34,193,238,.1);padding:4px 10px;border-radius:999px}
+.bridge{display:flex;align-items:center;gap:18px;margin:84px 0 0}
+.bridge::before,.bridge::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(34,193,238,.5),transparent)}
+.bridge span{font-family:var(--display);font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--cyan);font-size:15px;white-space:nowrap}
+.mascot-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;margin-top:40px}
+.logo-stage{background:radial-gradient(circle at 50% 40%, #16336D, var(--navy) 70%);border-radius:28px;padding:34px;border:1px solid rgba(255,255,255,.08)}
+.logo-stage .tabs{display:flex;gap:6px;background:rgba(255,255,255,.06);padding:5px;border-radius:999px;width:max-content;margin:0 auto 22px}
+.logo-stage .tabs button{border:0;background:none;color:#B8C7E0;font-family:var(--display);font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:15px;padding:8px 16px;border-radius:999px;cursor:pointer}
+.logo-stage .tabs button.on{background:var(--cyan);color:var(--abyss)}
+.logo-stage .frame{aspect-ratio:4/3;display:grid;place-items:center}
+.logo-stage .frame img{max-height:100%;object-fit:contain}
+.logo-stage .use{font-size:14px;color:#9FB2D2;text-align:center;margin-top:16px;min-height:44px}
+.translate{display:grid;gap:10px}
+.tr{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.tr:last-child{border-bottom:0}
+.tr .from{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#051022;background:var(--cyan);border-radius:6px;padding:3px 8px;white-space:nowrap;margin-top:3px}
+.tr h4{font-size:22px;text-transform:uppercase}
+.tr p{margin:2px 0 0;color:#B8C7E0;font-size:15.5px}
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+.sw{border-radius:12px;padding:10px;font-size:12px;color:#fff;min-height:84px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid rgba(255,255,255,.12)}
+.sw b{font-family:var(--display);font-size:16px;letter-spacing:.5px;text-transform:uppercase}
+@media (max-width:900px){.logo-grid,.mascot-grid{grid-template-columns:1fr}.manta-stage{position:relative;top:0}.bridge{margin-top:56px}}
+
+/* PROGRAMS */
+.prog-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:end}
+.prog-intro .tagline{font-family:var(--display);font-weight:700;font-size:clamp(24px,3vw,32px);line-height:1.1;color:var(--royal);margin-top:10px;text-transform:uppercase}
+.prog-intro .side p{margin:0 0 10px;color:#34445F}
+.prog-intro .side b.pace{font-family:var(--display);font-size:22px;color:var(--navy);text-transform:uppercase;display:block;margin-bottom:8px;font-weight:700}
+.progs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:44px}
+.prog{border-radius:26px;padding:34px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.prog.cd{background:#fff;border:1px solid var(--line)}
+.prog.ps{background:linear-gradient(150deg,var(--navy) 0%,#0A2A66 100%);color:#fff}
+.prog .top{display:flex;justify-content:space-between;align-items:start;gap:12px}
+.prog .no{font-family:var(--display);font-weight:800;font-size:64px;line-height:.8;color:var(--cyan)}
+.prog.cd .no{color:var(--royal)}
+.prog .stage{font-family:var(--display);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:14px;padding:5px 12px;border-radius:999px;background:#EEF4FE;color:var(--royal);white-space:nowrap}
+.prog.ps .stage{background:rgba(34,193,238,.15);color:var(--cyan)}
+.prog h3{font-size:clamp(34px,3.6vw,44px);margin:22px 0 6px;line-height:.95}
+.prog .slogan{font-style:italic;font-size:17px;color:var(--royal);margin:0 0 14px}
+.prog.ps .slogan{color:var(--cyan-soft)}
+.prog .desc{margin:0 0 22px;color:#34445F}
+.prog.ps .desc{color:#C3D2EA}
+.prog .lbl{font-family:var(--display);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:13.5px;color:var(--muted);margin-bottom:10px}
+.prog.ps .lbl{color:#8FA4C7}
+.prog ul{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:8px}
+.prog li{display:grid;grid-template-columns:22px 1fr;gap:8px;font-weight:600;font-size:16px}
+.prog li::before{content:"";width:10px;height:10px;margin-top:8px;border-radius:3px;transform:rotate(45deg);background:var(--royal)}
+.prog.ps li::before{background:var(--cyan)}
+.who{border-radius:16px;padding:20px;margin:0 0 24px;background:#EEF4FE;border:1px solid #D3E2F8}
+.prog.ps .who{background:rgba(34,193,238,.08);border-color:rgba(34,193,238,.25)}
+.who-h{font-family:var(--display);font-weight:700;font-size:21px;line-height:1.1;text-transform:uppercase;color:var(--navy);margin:2px 0 10px}
+.prog.ps .who-h{color:#fff}
+.who p{margin:0 0 8px;font-size:15px;color:#34445F}
+.prog.ps .who p{color:#C3D2EA}
+.prog .who ul.wl{margin:0 0 12px;gap:8px}
+.prog .who ul.wl li{font-weight:500;font-size:15px;line-height:1.5;grid-template-columns:18px 1fr}
+.prog .who ul.wl li::before{content:"✓";width:auto;height:auto;margin:0;transform:none;background:none;color:var(--royal);font-weight:800}
+.prog.ps .who ul.wl li::before{color:var(--cyan)}
+.who-note{font-style:italic;font-size:14.5px;padding-top:10px;border-top:1px dashed #C5D6EE;color:var(--royal)}
+.prog.ps .who-note{color:var(--cyan-soft);border-color:rgba(255,255,255,.18)}
+.prog .obj{margin-top:auto;border-radius:16px;padding:18px 20px;background:var(--foam);border:1px solid var(--line)}
+.prog.ps .obj{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+.prog .obj p{margin:0;font-size:15.5px}
+.prog.ps .obj p{color:#E3ECF8}
+.pathway{margin-top:24px;border-radius:26px;background:var(--abyss);color:#fff;padding:36px 40px;display:grid;grid-template-columns:1.3fr auto;gap:30px;align-items:center}
+.pathway h3{font-size:clamp(30px,3.6vw,40px);margin-bottom:10px}
+.pathway p{margin:0 0 8px;color:#B8C7E0}
+.pathway .note{font-style:italic;font-size:14px;color:#8FA4C7;margin-top:6px}
+@media (max-width:900px){.prog-intro,.progs,.pathway{grid-template-columns:1fr}.prog{padding:26px 22px}.pathway{padding:28px 22px}}
+
+/* COACH */
+.team{margin-top:72px}
+.team-head h3{font-size:clamp(30px,3.6vw,40px);color:var(--navy)}
+.team-head p{margin:8px 0 0;color:var(--muted);max-width:620px}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:24px}
+.tc{background:var(--foam);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.tc .ph{aspect-ratio:4/5;background:linear-gradient(140deg,var(--navy),var(--royal));display:grid;place-items:center}
+.tc .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.tc .ph span{font-family:var(--display);font-weight:800;font-size:64px;color:var(--cyan)}
+.tc .bd{padding:18px 20px 20px}
+.tc h4{font-size:24px;text-transform:uppercase;color:var(--navy);line-height:1}
+.tc .rl{font-family:var(--display);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:13px;color:var(--royal);margin:6px 0 10px}
+.tc p{margin:0;font-size:15px;color:#34445F}
+
+#coach{background:#fff}
+.coach{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start;margin-top:40px}
+.coach-photos{position:sticky;top:90px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cp{margin:0;border-radius:20px;overflow:hidden;background:var(--navy);box-shadow:0 20px 44px rgba(11,27,58,.14)}
+.cp img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover}
+.cp.main{grid-column:1/-1;border-radius:28px}
+.cp.main img{aspect-ratio:4/5;object-position:50% 20%}
+.coach-text .hook{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1.05;text-transform:uppercase;color:var(--royal);margin:0 0 22px}
+.coach-text .name{font-family:var(--display);font-weight:800;font-size:30px;text-transform:uppercase;color:var(--navy);line-height:1}
+.coach-text .role{font-family:var(--display);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:14px;color:var(--muted);margin:6px 0 20px}
+.coach-text p{margin:0 0 14px;color:#34445F}
+.philo{margin-top:26px;border-radius:20px;background:var(--navy);color:#fff;padding:24px 26px;position:relative;overflow:hidden}
+.philo::after{content:"";position:absolute;right:-40px;bottom:-40px;width:160px;height:160px;border-radius:50%;border:28px solid rgba(34,193,238,.12)}
+.philo small{font-family:var(--display);letter-spacing:3px;text-transform:uppercase;font-weight:700;color:var(--cyan);font-size:13px}
+.philo div{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.6vw,30px);line-height:1.1;text-transform:uppercase;margin-top:6px;position:relative;z-index:1}
+.approach{margin-top:80px;padding-top:56px;border-top:1px solid var(--line)}
+.approach-head{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:end;margin-bottom:28px}
+.approach-head h3{font-size:clamp(32px,4vw,46px);color:var(--navy)}
+.approach-head .sub{font-family:var(--display);font-weight:700;font-size:20px;text-transform:uppercase;color:var(--royal);margin-top:8px}
+.approach-head p{margin:0;color:#34445F}
+.appr{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ap{background:var(--foam);border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px}
+.ap .ic{width:46px;height:46px;border-radius:12px;background:var(--navy);display:grid;place-items:center;margin-bottom:16px}
+.ap .ic svg{width:24px;height:24px;stroke:var(--cyan);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ap h4{font-size:23px;text-transform:uppercase;color:var(--navy);margin-bottom:6px}
+.ap p{margin:0;font-size:15px;color:#34445F}
+@media (max-width:1000px){.appr{grid-template-columns:repeat(2,1fr)}.approach-head{grid-template-columns:1fr}}
+@media (max-width:900px){.coach{grid-template-columns:1fr;gap:32px}.coach-photos{position:relative;top:0;max-width:480px}}
+@media (max-width:560px){.appr{grid-template-columns:1fr}}
+
+/* REGISTER */
+#daftar{background:linear-gradient(180deg,var(--navy) 0%,var(--abyss) 100%);border-top:1px solid rgba(34,193,238,.18)}
+.reg{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;margin-top:40px;align-items:start}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:14px;padding:16px 0;position:relative}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:25px;top:64px;bottom:-6px;width:2px;background:rgba(34,193,238,.3)}
+.steps .dot{width:52px;height:52px;border-radius:50%;border:2px solid var(--cyan);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:24px;color:var(--cyan)}
+.steps h4{font-size:24px;text-transform:uppercase}
+.steps p{margin:4px 0 0;color:#B8C7E0;font-size:15.5px}
+.quota{margin-top:24px;padding:18px 20px;border-radius:14px;background:rgba(229,57,69,.12);border:1px solid rgba(229,57,69,.35);color:#FFD6DA;font-size:15px}
+.quota b{color:#fff}
+.form{background:#fff;color:var(--ink);border-radius:24px;padding:30px}
+.form h3{color:var(--navy);margin-bottom:4px}
+.form .sub{color:var(--muted);font-size:15px;margin:0 0 20px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f.full{grid-column:1/-1}
+.f label{font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:#3A4B68}
+.f input,.f select,.f textarea{font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#FAFCFE;color:var(--ink);width:100%}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--royal);background:#fff;box-shadow:0 0 0 4px rgba(30,91,216,.12)}
+.f textarea{min-height:84px;resize:vertical}
+.f .hint{font-size:12.5px;color:var(--muted)}
+.fsec{grid-column:1/-1;font-family:var(--display);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--royal);font-size:14px;margin-top:8px;padding-top:12px;border-top:1px dashed var(--line)}
+.fsec:first-child{margin-top:0;padding-top:0;border-top:0}
+.form .submit{margin-top:22px;width:100%;justify-content:center}
+.err{color:var(--red);font-size:14px;margin-top:10px;display:none}
+.done{display:none;text-align:center;padding:10px 0}
+.done.show{display:block}
+.done .tick{width:70px;height:70px;border-radius:50%;background:#E6F8EE;color:#1C9A55;display:grid;place-items:center;margin:0 auto 14px}
+.done p{color:var(--muted)}
+.done .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.wa{background:#1FAF5A;color:#fff}
+.wa:hover{background:#178a47}
+.preview{white-space:pre-wrap;text-align:left;background:#F4F8FC;border:1px solid var(--line);border-radius:12px;padding:14px;font-size:13.5px;max-height:220px;overflow:auto;margin-top:16px;color:#2C3E5C}
+@media (max-width:900px){.reg{grid-template-columns:1fr}}
+@media (max-width:560px){.fgrid{grid-template-columns:1fr}.form{padding:22px}}
+
+.journey-hook{font-family:var(--display);font-weight:700;font-size:clamp(24px,3vw,32px);text-transform:uppercase;color:var(--cyan);margin:14px 0 10px;line-height:1.1}
+.steps.journey li{align-items:center;padding:18px 0}
+.steps.journey li:not(:last-child)::after{top:70px}
+.steps.journey h4{font-size:clamp(26px,3vw,34px)}
+.fnote{font-size:13.5px;color:var(--muted);margin:14px 0 0;text-align:center}
+
+/* NEWS + CALENDAR */
+.news-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;margin-top:40px;align-items:start}
+.ann{display:grid;gap:12px}
+.ann article{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;position:relative}
+.ann article.pin{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(34,193,238,.15)}
+.ann .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-bottom:8px}
+.tagc{font-family:var(--display);font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:12.5px;padding:3px 9px;border-radius:6px;color:#fff;background:var(--c,var(--royal))}
+.ann h4{font-size:24px;text-transform:uppercase;color:var(--navy)}
+.ann p{margin:6px 0 0;font-size:15.5px;color:#34445F}
+.cal{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;position:sticky;top:90px}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.cal-head h3{font-size:30px;color:var(--navy)}
+.cal-head small{display:block;font-family:var(--body);font-size:13px;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:500}
+.cal-nav{display:flex;gap:6px}
+.cal-nav button{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:#fff;cursor:pointer;font-size:18px;color:var(--navy)}
+.cal-nav button:hover:not(:disabled){background:var(--navy);color:#fff;border-color:var(--navy)}
+.cal-nav button:disabled{opacity:.35;cursor:default}
+.grid7{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.dow{font-family:var(--display);font-weight:700;font-size:13px;text-align:center;color:var(--muted);letter-spacing:1px;padding-bottom:4px}
+.day{aspect-ratio:1/1;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:6px;font-size:14px;font-weight:600;position:relative;border:0;background:#F6F9FD;color:var(--ink);cursor:default;font-family:var(--body)}
+.day.empty{background:none}
+.day.has{cursor:pointer;background:#EAF2FD}
+.day.has:hover,.day.sel{outline:2px solid var(--royal)}
+.day.today{background:var(--navy);color:#fff}
+.day.range{background:#FFF4E2}
+.dots{display:flex;gap:3px;margin-top:auto;margin-bottom:6px}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--c)}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0 6px;font-size:13px;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:50%;background:var(--c)}
+.evlist{margin-top:12px;border-top:1px solid var(--line);padding-top:12px;display:grid;gap:8px;max-height:300px;overflow:auto}
+.ev{display:grid;grid-template-columns:62px 1fr;gap:12px;align-items:start;padding:8px;border-radius:10px}
+.ev.hl{background:#EEF4FE}
+.ev .d{font-family:var(--display);text-align:center;border-radius:10px;padding:6px 0;background:var(--c);color:#fff;line-height:1}
+.ev .d b{display:block;font-size:24px}
+.ev .d span{font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.ev h5{margin:0;font-size:15.5px;font-family:var(--body);font-weight:700;color:var(--navy)}
+.ev p{margin:2px 0 0;font-size:13.5px;color:var(--muted)}
+.cal-note{font-size:12.5px;color:var(--muted);margin-top:12px}
+@media (max-width:960px){.news-grid{grid-template-columns:1fr}.cal{position:relative;top:0}}
+
+/* FAQ */
+#faq{background:var(--foam)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
+.faq-head{position:sticky;top:90px}
+.faq-head h2{font-size:clamp(40px,5vw,60px)}
+.faq-tag{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.6vw,28px);text-transform:uppercase;color:var(--royal);margin-top:12px}
+.faq-list{display:grid;gap:12px}
+.qa{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:border-color .2s, box-shadow .2s}
+.qa[open]{border-color:#BFD4F2;box-shadow:0 12px 30px rgba(11,27,58,.08)}
+.qa summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:40px 1fr 32px;gap:12px;align-items:center;padding:20px 22px}
+.qa summary::-webkit-details-marker{display:none}
+.qn{font-family:var(--display);font-weight:800;font-size:22px;color:var(--royal)}
+.qt{font-weight:700;font-size:17px;color:var(--navy);line-height:1.35}
+.qi{width:32px;height:32px;border-radius:50%;border:2px solid var(--line);position:relative;transition:transform .25s, background .2s}
+.qi::before,.qi::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--navy);transform:translate(-50%,-50%)}
+.qi::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .25s}
+.qa[open] .qi{background:var(--navy);border-color:var(--navy)}
+.qa[open] .qi::before,.qa[open] .qi::after{background:#fff}
+.qa[open] .qi::after{transform:translate(-50%,-50%) rotate(0)}
+.ans{padding:0 22px 20px 74px}
+.ans p{margin:0 0 10px;color:#34445F;font-size:15.5px}
+.ans p:last-child{margin-bottom:0}
+.faq-cta{margin-top:48px;border-radius:26px;background:linear-gradient(135deg,var(--navy),#123a8a);color:#fff;padding:34px 40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.faq-cta h3{font-size:clamp(28px,3.4vw,40px);line-height:1.05}
+.faq-cta h3 span{color:var(--cyan)}
+@media (max-width:900px){.faq-grid{grid-template-columns:1fr;gap:28px}.faq-head{position:static}.ans{padding:0 20px 18px 20px}.qa summary{grid-template-columns:32px 1fr 30px;padding:18px}.faq-cta{padding:28px 22px}.faq-cta .btn{width:100%;justify-content:center;font-size:17px}}
+
+/* LOCATION */
+#lokasi{background:#fff}
+.loc{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;margin-top:40px;align-items:stretch}
+.mapcard{border-radius:24px;overflow:hidden;position:relative;min-height:400px;background:var(--navy);color:#fff}
+.mapcard svg{position:absolute;inset:0;width:100%;height:100%}
+.mapcard .info{position:absolute;left:20px;right:20px;bottom:20px;background:rgba(5,14,34,.88);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:20px 22px}
+.mapcard .info h4{font-size:28px;text-transform:uppercase}
+.mapcard .info p{margin:6px 0 14px;color:#C3D2EA;font-size:15.5px}
+.facts{display:grid;gap:12px}
+.fact-row{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:var(--foam)}
+.fact-row .ic{width:48px;height:48px;border-radius:12px;background:var(--navy);display:grid;place-items:center}
+.fact-row .ic svg{width:24px;height:24px;stroke:var(--cyan);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.fact-row h4{font-size:21px;text-transform:uppercase;color:var(--navy)}
+.fact-row p{margin:2px 0 0;font-size:15px;color:var(--muted)}
+@media (max-width:900px){.loc{grid-template-columns:1fr}.mapcard{min-height:0;display:flex;flex-direction:column}.mapcard svg{position:relative;height:210px;flex:none}.mapcard .info{position:relative;left:auto;right:auto;bottom:auto;margin:-24px 14px 14px}.mapcard .info .btn{font-size:16px;padding:12px 20px}}
+
+/* FOOTER */
+footer{background:var(--abyss);color:#9FB2D2;padding:60px 0 30px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;align-items:start}
+.foot img{height:70px;width:auto;margin-bottom:14px}
+.foot h5{font-family:var(--display);font-size:18px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin:0 0 12px}
+.foot a{display:block;color:#C3D2EA;text-decoration:none;padding:3px 0}
+.foot a:hover{color:var(--cyan)}
+.copy{border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:20px;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:800px){.foot{grid-template-columns:1fr}}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.hero-logo{animation:none}html{scroll-behavior:auto}}
+
+/* CEK DATA PANEL */
+#cekData{position:fixed;inset:auto 16px 16px auto;z-index:100;width:min(440px,calc(100vw - 32px));max-height:80vh;overflow:auto;background:#fff;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.35);border:2px solid var(--navy);font-size:14.5px}
+#cekData .ck-in{padding:18px 20px}
+#cekData .ck-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+#cekData .ck-h b{font-family:var(--display);font-size:22px;text-transform:uppercase;color:var(--navy)}
+#cekData .ck-h button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit}
+#cekData .ck-s{padding:10px 12px;border-radius:10px;font-weight:700;margin-bottom:10px}
+#cekData .ck-s.g{background:#E6F8EE;color:#127A42}
+#cekData .ck-s.b{background:#FDECEE;color:#B3202D}
+#cekData .ck-t{font-family:var(--display);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:13px;color:var(--muted);margin:12px 0 4px}
+#cekData ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+#cekData li.g{color:#127A42}
+#cekData li.b{color:#B3202D}
+#cekData .ck-n{font-size:12.5px;color:var(--muted);margin-top:12px}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand"><img src="img/logo-mono-white.png" alt=""><span>DEVILRAYS</span></a>
+    <button class="burger" id="burger" aria-label="Menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <ul class="menu" id="menu">
+      <li><a href="#program">Program</a></li>
+      <li><a href="#coach">Coach</a></li>
+      <li><a href="#tentang">Philosophy</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#lokasi">Home Pool</a></li>
+      <li><a href="#kabar">Announcement</a></li>
+      <li><a href="#daftar" class="cta">Start Your Consultation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="lane-lines"></div>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Be Part of Our First Chapter</div>
+      <h1>Chasing<em>Legacy.</em></h1>
+      <div class="hero-sub">Every legacy begins somewhere.</div>
+      <p>Devilrays Aquatics membuka kesempatan bagi atlet kompetitif yang ingin berkembang melalui pembinaan terarah, perhatian individual, dan komitmen bersama terhadap proses.</p>
+      <p class="p2">Kami memulai dengan kelompok latihan kecil agar setiap atlet memiliki ruang untuk dikenal, didengar, dan berkembang.</p>
+      <div class="hero-tag">Different Pathways. One Pursuit of Excellence.</div>
+      <div class="actions">
+        <a href="#daftar" class="btn btn-primary">Discuss Your Training Pathway
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#program" class="btn btn-ghost">Lihat Program</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>2 Program</b><span>Competitive pathway</span></div>
+      </div>
+    </div>
+    <img class="hero-logo" src="img/logo-mascot.webp" alt="Logo Devilrays Aquatics — maskot pari manta">
+  </div>
+  <div class="waves"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path fill="#F4F8FC" d="M0,64 C180,110 360,20 540,48 C720,76 900,120 1080,92 C1260,64 1350,40 1440,56 L1440,120 L0,120 Z"/><path fill="#F4F8FC" opacity=".35" d="M0,40 C200,90 400,0 620,30 C840,60 1000,100 1200,70 C1320,52 1390,30 1440,36 L1440,120 L0,120 Z"/></svg></div>
+</header>
+
+<!-- 2. OUR PROGRAM -->
+<section id="program">
+  <div class="wrap">
+    <div class="prog-intro">
+      <div class="reveal">
+        <div class="eyebrow">Program &amp; Layanan</div>
+        <h2>Our Programs</h2>
+        <div class="tagline">Different Pathways.<br>One Pursuit of Excellence.</div>
+      </div>
+      <div class="side reveal">
+        <b class="pace">Every swimmer develops at their own pace.</b>
+        <p>Di Devilrays Aquatics, kami percaya bahwa pembinaan yang berkualitas dimulai dari memahami kebutuhan, kemampuan, dan tujuan setiap atlet.</p>
+        <p>Saat ini, Devilrays berfokus pada dua program pembinaan renang kompetitif.</p>
+      </div>
+    </div>
+
+    <div class="progs">
+      <article class="prog cd reveal">
+        <div class="top"><div class="no">01</div><span class="stage">Train to Train</span></div>
+        <h3>Competitive Development</h3>
+        <p class="slogan">Building the Foundation for Competitive Excellence.</p>
+        <p class="desc">Program pembinaan untuk perenang yang sedang mengembangkan kemampuan dan kesiapan menuju latihan kompetitif yang lebih terstruktur.</p>
+        <div class="who">
+          <div class="lbl">Who Is This For?</div>
+          <div class="who-h">For swimmers building their competitive foundation.</div>
+          <p>Program ini ditujukan bagi perenang yang:</p>
+          <ul class="wl">
+            <li>Sudah mampu berenang secara mandiri dan ingin mengembangkan kemampuannya menuju latihan kompetitif yang lebih terstruktur.</li>
+            <li>Sedang membangun fondasi teknik, kemampuan fisik, serta keterampilan dan kebiasaan latihan yang baik.</li>
+            <li>Memiliki minat untuk berkembang dalam renang kompetitif dan siap membangun komitmen latihan secara bertahap.</li>
+          </ul>
+          <div class="who-note">Competition experience is not required. A willingness to learn and grow matters.</div>
+        </div>
+        <div class="lbl">Training Focus</div>
+        <ul>
+          <li>Technical Development & Stroke Efficiency</li>
+          <li>Aerobic Capacity & Physical Foundation</li>
+          <li>Training Skills & Discipline</li>
+          <li>Race Skills & Competition Fundamentals</li>
+        </ul>
+        <div class="obj"><div class="lbl">Our Objective</div><p>Membentuk atlet yang memiliki fondasi teknik, kemampuan latihan, dan kebiasaan yang mendukung perkembangan kompetitif jangka panjang.</p></div>
+      </article>
+      <article class="prog ps reveal">
+        <div class="top"><div class="no">02</div><span class="stage">Train to Compete</span></div>
+        <h3>Performance Squad</h3>
+        <p class="slogan">Preparing Athletes to Perform at Their Best.</p>
+        <p class="desc">Program pembinaan bagi atlet yang telah memiliki fondasi latihan kompetitif dan siap menjalani persiapan yang lebih spesifik untuk menghadapi kejuaraan.</p>
+        <div class="who">
+          <div class="lbl">Who Is This For?</div>
+          <div class="who-h">For competitive swimmers ready to pursue higher performance.</div>
+          <p>Program ini ditujukan bagi atlet yang:</p>
+          <ul class="wl">
+            <li>Telah memiliki pengalaman dan fondasi latihan kompetitif yang terstruktur.</li>
+            <li>Memiliki kesiapan untuk menjalani latihan yang lebih spesifik berdasarkan kebutuhan nomor lomba dan target performa.</li>
+            <li>Siap berkomitmen terhadap proses persiapan kompetisi, evaluasi performa, dan pengembangan kemampuan secara berkelanjutan.</li>
+          </ul>
+          <div class="who-note">Performance is more than personal bests. It requires preparation, commitment, and continuous development.</div>
+        </div>
+        <div class="lbl">Training Focus</div>
+        <ul>
+          <li>Event-Specific Training & Periodization</li>
+          <li>Race Strategy & Competition Execution</li>
+          <li>Technical Efficiency at Race Speed</li>
+          <li>Performance Development & Competitive Mindset</li>
+        </ul>
+        <div class="obj"><div class="lbl">Our Objective</div><p>Mempersiapkan atlet untuk mencapai performa terbaik, mengejar target kompetitif, dan mengembangkan kemampuan untuk bersaing pada level yang lebih tinggi.</p></div>
+      </article>
+    </div>
+
+    <div class="pathway reveal">
+      <div>
+        <div class="eyebrow">Penempatan Atlet</div>
+        <h3>Find Your Pathway</h3>
+        <p>Setiap atlet memiliki perjalanan, kemampuan, dan kesiapan yang berbeda.</p>
+        <p>Pilihan program di atas merupakan gambaran awal, bukan persyaratan penerimaan yang mutlak. Penempatan atlet ditentukan melalui konsultasi dan <b style="color:#fff">Trial Session</b> bersama pelatih.</p>
+      </div>
+      <a href="#daftar" class="btn btn-primary">Discuss Your Training Pathway</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. MEET THE COACH -->
+<section id="coach">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Meet The Coach</div>
+      <h2>Meet The Founder<br>&amp; Head Coach</h2>
+    </div>
+    <div class="coach">
+      <div class="coach-photos reveal">
+        <figure class="cp main"><img src="img/coach-main.webp" alt="Hans Sebastian Sandjojo berdiri di tepi kolam"></figure>
+        <figure class="cp"><img src="img/coach-squat.webp" alt="Hans memberi arahan kepada atlet di tepi kolam" style="object-position:50% 40%"></figure>
+        <figure class="cp"><img src="img/coach-hans.webp" alt="Hans memimpin sesi latihan dengan stopwatch" style="object-position:50% 18%"></figure>
+      </div>
+      <div class="coach-text reveal">
+        <p class="hook">Behind Every Athlete Is a Purposeful Process.</p>
+        <div class="name">Hans Sebastian Sandjojo</div>
+        <div class="role">Founder &amp; Head Coach — Devilrays Aquatics</div>
+        <p>Devilrays Aquatics didirikan berdasarkan keyakinan bahwa pembinaan atlet yang berkualitas tidak hanya ditentukan oleh intensitas latihan atau hasil kompetisi, tetapi juga oleh bagaimana setiap atlet memahami proses dan mengembangkan potensinya.</p>
+        <p>Sebagai Founder &amp; Head Coach, Hans memimpin perencanaan, pelaksanaan, dan evaluasi pembinaan atlet Devilrays.</p>
+        <p>Dengan pengalaman dalam pembinaan renang kompetitif, pendekatannya menekankan pengembangan kemampuan teknis, persiapan fisik, perencanaan latihan yang terstruktur, dan pengembangan atlet secara individual.</p>
+        <p>Hans tetap terlibat langsung dalam proses latihan, sekaligus membangun sistem pembinaan yang memungkinkan setiap atlet berkembang melalui program yang konsisten dan terarah.</p>
+        <div class="philo"><small>Coaching Philosophy</small><div>Individual Pathways. Purposeful Training. Sustainable Excellence.</div></div>
+      </div>
+    </div>
+
+    <div class="team" id="team" hidden>
+      <div class="team-head reveal">
+        <div class="eyebrow">Tim Pelatih</div>
+        <h3>Coaching Team</h3>
+        <p>Mendampingi Head Coach dengan pendekatan dan standar pembinaan yang sama.</p>
+      </div>
+      <div class="team-grid" id="teamGrid"></div>
+    </div>
+
+    <div class="approach">
+      <div class="approach-head reveal">
+        <div><div class="eyebrow">Cara Kami Membina</div><h3>The Devilrays Coaching Approach</h3><div class="sub">One Philosophy. One Direction. Individual Pathways.</div></div>
+        <p>Setiap atlet memiliki kebutuhan yang berbeda, tetapi seluruh pembinaan Devilrays berjalan berdasarkan standar, filosofi, dan tujuan yang terkoordinasi.</p>
+      </div>
+      <div class="appr">
+        <div class="ap reveal"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></div><h4>Structured Planning</h4><p>Program dirancang secara terarah berdasarkan kebutuhan dan tujuan atlet.</p></div>
+        <div class="ap reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/></svg></div><h4>Hands-On Coaching</h4><p>Pembinaan dilaksanakan melalui pendampingan teknis dan observasi langsung.</p></div>
+        <div class="ap reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l4-4 3 3 5-6"/></svg></div><h4>Progress Monitoring</h4><p>Perkembangan atlet menjadi dasar evaluasi dan penyesuaian program.</p></div>
+        <div class="ap reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Coaching Consistency</h4><p>Pelatih yang terlibat mengikuti pendekatan dan standar pembinaan yang sama.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. DEVILRAYS PHILOSOPHY -->
+<section id="tentang">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Who We Are</div>
+      <h2>Devilrays Philosophy</h2>
+      <p class="lead">Devilrays Aquatics adalah klub renang di Semarang yang mengejar prestasi dengan serius, sambil menghargai proses dan setiap manusia yang menjalaninya.</p>
+    </div>
+
+    <div class="purpose reveal">
+      <div class="kicker">Our Purpose · Why Devilrays Exists</div>
+      <blockquote>To empower every athlete to pursue their fullest potential through their own developmental pathway, fostering both competitive excellence and personal growth that lasts beyond the pool.</blockquote>
+      <p class="makna">Devilrays hadir untuk memberdayakan setiap atlet mengejar potensi terbaiknya melalui jalur perkembangan yang sesuai, sekaligus membina prestasi kompetitif dan pertumbuhan pribadi yang berarti melampaui kolam renang.</p>
+      <div class="impl">
+        <div><b>Empower, not dictate</b><span>Atlet memahami tujuan, ikut berproses, dan memiliki suara.</span></div>
+        <div><b>Individual pathways</b><span>Kemampuan, kesiapan, tujuan, dan komitmen membentuk progresi masing-masing.</span></div>
+        <div><b>Performance + growth</b><span>Prestasi dan perkembangan pribadi dinilai bersama.</span></div>
+        <div><b>Beyond the pool</b><span>Nilai dari renang tetap berguna setelah fase kompetitif berakhir.</span></div>
+      </div>
+    </div>
+
+    <div class="vision reveal">
+      <div class="kicker">Our Vision</div>
+      <div>
+        <blockquote>To become a leading swimming academy that nurtures generations of athletes, enables excellence from grassroots to international levels, and makes swimming a lifelong pursuit.</blockquote>
+        <p>Menjadi akademi yang unggul dalam kualitas pembinaan, mampu mengembangkan generasi atlet dari level dasar menuju level internasional, serta menjaga hubungan sepanjang hidup dengan olahraga renang.</p>
+      </div>
+    </div>
+
+    <div class="subhead reveal">
+      <div><div class="eyebrow">Our Mission</div><h3>Six Mission Pillars</h3></div>
+      <p>To deliver progressive, individualized swimming development through excellent coaching, meaningful athlete-family partnerships, and a culture that values commitment, character, and competitive achievement, while creating opportunities to remain connected with swimming for life.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal" style="--c:#22C1EE"><div class="no">01</div><h4>Individualized Development Pathways</h4><p>Setiap atlet berkembang melalui tahapan yang mempertimbangkan keterampilan, kesiapan fisik-psikologis, kematangan, tujuan, dan komitmen.</p></div>
+      <div class="pillar reveal" style="--c:#1E5BD8"><div class="no">02</div><h4>Coaching Excellence</h4><p>Pelatih menggabungkan penguasaan teknik, pedagogi, penilaian berbasis bukti, komunikasi, dan pengembangan profesi berkelanjutan.</p></div>
+      <div class="pillar reveal" style="--c:#0B1B3A"><div class="no">03</div><h4>Competitive Excellence</h4><p>Atlet dibina mengejar standar kompetitif melalui progresi kemampuan, persiapan terencana, evaluasi race, dan dukungan yang adil.</p></div>
+      <div class="pillar reveal" style="--c:#22C1EE"><div class="no">04</div><h4>Shared Ownership & Partnership</h4><p>Pelatih memimpin keputusan teknis secara profesional; atlet punya suara dan tanggung jawab; keluarga mendukung sesuai kapasitas.</p></div>
+      <div class="pillar reveal" style="--c:#1E5BD8"><div class="no">05</div><h4>Character & Wellbeing</h4><p>Disiplin, ketangguhan, penghargaan pada sesama, keselamatan, dan kesejahteraan fisik-psikologis dibina sebagai bagian dari olahraga.</p></div>
+      <div class="pillar reveal" style="--c:#E53945"><div class="no">06</div><h4>Lifelong Swimming</h4><p>Hubungan dengan renang dijaga melampaui masa kompetitif melalui komunitas, alumni, dan opsi keterlibatan di masa depan.</p></div>
+    </div>
+    <div class="motto reveal">Coaches lead. Athletes take ownership. Families support. <b>And every athlete belongs to a team that grows together.</b></div>
+
+    <div class="way reveal">
+      <div class="way-head">
+        <div><div class="eyebrow">Core Values</div><h3>The Devilrays Way</h3></div>
+        <div class="tri">High Standards.<br>Human Dignity.<br>Shared Accountability.</div>
+      </div>
+      <div class="values">
+        <div class="value"><div class="vn">01</div><h4>Respect the Individual</h4><div class="tag">Every athlete matters beyond their performance.</div><p>Setiap manusia dihargai terlepas dari kemampuan, ranking, dan medali.</p></div>
+        <div class="value"><div class="vn">02</div><h4>Own the Process</h4><div class="tag">Take responsibility for what you can control.</div><p>Komitmen, persiapan, dan keputusan adalah tanggung jawab kita; hasil akhir tidak seluruhnya dalam kendali.</p></div>
+        <div class="value"><div class="vn">03</div><h4>Pursue Excellence</h4><div class="tag">Challenge yourself. Learn. Improve.</div><p>Excellence adalah peningkatan kualitas yang bertujuan, melalui pembelajaran dan progresi sesuai kesiapan.</p></div>
+        <div class="value"><div class="vn">04</div><h4>Integrity Over Achievement</h4><div class="tag">No victory is worth compromising our principles.</div><p>Prestasi tidak pernah membenarkan pelanggaran etika, martabat, keselamatan, atau keadilan.</p></div>
+        <div class="value"><div class="vn">05</div><h4>Camaraderie</h4><div class="tag">Different journeys. One team. We rise together.</div><p>Dukungan tim dan rasa memiliki membuat perjalanan setiap atlet tidak perlu dijalani sendirian.</p></div>
+      </div>
+    </div>
+
+    <div class="promises">
+      <div class="intro reveal">
+        <div class="eyebrow">Founder Commitments</div>
+        <h3 style="font-size:38px;color:var(--navy)">Lima janji untuk setiap atlet</h3>
+        <p>Janji pembinaan Devilrays: suara atlet dihargai, jalurnya punya tujuan, kemajuan dilihat secara personal, prestasi butuh komitmen, dan kesejahteraan tidak bisa ditawar.</p>
+      </div>
+      <div class="promise-list">
+        <div class="promise reveal"><div class="pn">01</div><div><h4>Every Voice Matters</h4><p>Setiap atlet punya ruang menyampaikan pendapat, keluhan, dan aspirasi. Didengar tidak berarti setiap permintaan harus disetujui.</p></div></div>
+        <div class="promise reveal"><div class="pn">02</div><div><h4>Every Path Has a Purpose</h4><p>Setiap atlet punya tujuan jangka pendek, menengah, dan panjang yang dipahami bersama dan ditinjau berkala.</p></div></div>
+        <div class="promise reveal"><div class="pn">03</div><div><h4>Progress Is Personal</h4><p>Kemajuan dibandingkan dengan titik awal dan target atlet sendiri, tanpa mengabaikan standar kompetitif yang relevan.</p></div></div>
+        <div class="promise reveal"><div class="pn">04</div><div><h4>Excellence Requires Commitment</h4><p>Atlet dibantu memahami hubungan antara target, pilihan, konsekuensi, dan tanggung jawab atas komitmen yang disepakati.</p></div></div>
+        <div class="promise reveal"><div class="pn">05</div><div><h4>Wellbeing Is Non-Negotiable</h4><p>Ambisi kompetitif tidak membenarkan praktik yang membahayakan keselamatan, kesehatan, atau martabat atlet.</p></div></div>
+      </div>
+    </div>
+
+    <div class="chain reveal">Purpose <span>→</span> Principles <span>→</span> Behavior <span>→</span> Legacy</div>
+  </div>
+</section>
+
+<!-- 4b. WHY THE MANTA (philosophy) -->
+<section id="logo" class="dark">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Makna Logo</div>
+      <h2>Why The Manta</h2>
+      <p class="lead">Sebelum menjadi maskot, ia adalah pari manta, yang juga dikenal dengan nama <i>devil ray</i>. Setiap bagian tubuhnya menyimpan cerita yang kami pegang sebagai klub. Ketuk angka pada foto untuk melihat maknanya.</p>
+    </div>
+
+    <div class="logo-grid">
+      <figure class="manta-stage reveal" style="margin:0">
+        <div class="photo">
+          <img src="img/manta.webp" alt="Foto pari manta berenang di perairan biru dengan cahaya matahari dari permukaan">
+          <button class="spot" data-spot="1" style="left:69%;top:25%" aria-label="Makna 1: mulut dan insang">1</button>
+          <button class="spot" data-spot="2" style="left:21.4%;top:42.6%" aria-label="Makna 2: sirip dada">2</button>
+          <button class="spot" data-spot="3" style="left:80.2%;top:37%" aria-label="Makna 3: sirip kepala">3</button>
+          <button class="spot" data-spot="4" style="left:56.3%;top:61%" aria-label="Makna 4: pola perut">4</button>
+        </div>
+        <figcaption>Ketuk angka untuk melihat makna tiap bagian tubuh manta</figcaption>
+      </figure>
+
+      <div class="meanings">
+        <div class="meaning reveal" data-m="1"><div class="n">01</div><div>
+          <div class="part">Mulut & insang</div>
+          <h4>Tidak Pernah Berhenti</h4>
+          <p>Manta harus terus berenang agar air mengalir melewati insangnya. Berhenti berarti tidak bernapas. Inilah inti <b>Chasing Legacy</b>: perkembangan adalah gerak yang terus berjalan, bukan satu kali lomba.</p>
+          <span class="fact">Fakta: manta bernapas dengan ram ventilation</span>
+        </div></div>
+        <div class="meaning reveal" data-m="2"><div class="n">02</div><div>
+          <div class="part">Sirip dada (sayap)</div>
+          <h4>Terbang di Dalam Air</h4>
+          <p>Manta bergerak dengan kepakan sirip dada yang bergelombang, mirip gerakan gaya kupu-kupu dan dolphin kick. Ia mengingatkan bahwa kecepatan lahir dari teknik dan ritme, bukan sekadar tenaga.</p>
+        </div></div>
+        <div class="meaning reveal" data-m="3"><div class="n">03</div><div>
+          <div class="part">Sirip kepala</div>
+          <h4>Tanduk Sang “Devil Ray”</h4>
+          <p>Sepasang sirip kepala yang menyerupai tanduk memberi manta julukan <i>devil ray</i>. Bagi kami, ia melambangkan sisi tangguh dan pantang menyerah, dibalut gerak yang tetap anggun dan cerdas.</p>
+        </div></div>
+        <div class="meaning reveal" data-m="4"><div class="n">04</div><div>
+          <div class="part">Pola bintik perut</div>
+          <h4>Setiap Atlet Itu Unik</h4>
+          <p>Pola bintik di perut setiap manta berbeda, seperti sidik jari, dan peneliti memakainya untuk mengenali tiap individu. Begitu pula atlet kami: setiap anak punya jalur dan tujuan pribadinya sendiri.</p>
+        </div></div>
+        <div class="meaning reveal" data-m="5"><div class="n">05</div><div>
+          <div class="part">Habitat</div>
+          <h4>Kebanggaan Indonesia</h4>
+          <p>Perairan Indonesia adalah rumah bagi pari manta, dan sejak 2014 manta dilindungi penuh oleh negara. Simbol ini membawa pesan: hebat, sekaligus bertanggung jawab menjaga apa yang berharga.</p>
+          <span class="fact">Kepmen KP No. 4/KEPMEN-KP/2014</span>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="bridge reveal"><span>Dari Manta ke Maskot</span></div>
+
+    <div class="mascot-grid">
+      <div class="logo-stage reveal">
+        <div class="tabs" role="tablist">
+          <button class="on" data-logo="mascot">Logo Maskot</button>
+          <button data-logo="mono">Logo Profesional</button>
+        </div>
+        <div class="frame"><img id="logoImg" src="img/logo-mascot.webp" alt="Logo maskot Devilrays Aquatics"></div>
+        <div class="use" id="logoUse">Dipakai di seragam, topi renang, merchandise, media sosial, dan spanduk.</div>
+      </div>
+      <div class="reveal">
+        <h3 style="font-size:clamp(34px,4vw,46px);margin-bottom:16px">Filosofi yang<br>menjadi identitas</h3>
+        <p style="color:#C3D2EA;font-size:18px;margin:0 0 14px">Logo Devilrays lahir dari filosofi yang kami temukan pada pari manta: terus bergerak, tangguh namun tetap anggun, dan unik pada setiap individunya.</p>
+        <p style="color:#C3D2EA;font-size:18px;margin:0">Logo ini adalah terjemahan visual dari filosofi tersebut dan dari <b style="color:#fff">purpose</b> kami membangun klub: memberdayakan setiap atlet mengejar potensi terbaiknya melalui jalurnya sendiri, di dalam maupun di luar kolam.</p>
+        <div class="chain" style="color:#fff;text-align:left;margin-top:30px;font-size:18px">Manta <span style="color:var(--cyan)">→</span> Philosophy <span style="color:var(--cyan)">→</span> Purpose <span style="color:var(--cyan)">→</span> Devilrays</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 5. YOUR JOURNEY STARTS HERE -->
+<section id="daftar" class="dark">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Pendaftaran</div>
+      <h2>Your Journey<br>Starts Here</h2>
+      <p class="journey-hook">Every Athlete Has a Story. Let's Start With Yours.</p>
+      <p class="lead">Sebelum bergabung, kami ingin memahami pengalaman, tujuan, dan kesiapanmu untuk menemukan program pembinaan yang paling sesuai.</p>
+    </div>
+    <div class="reg">
+      <div class="reveal">
+        <ol class="steps journey">
+          <li><div class="dot">1</div><div><h4>Let's Connect</h4></div></li>
+          <li><div class="dot">2</div><div><h4>Join a Trial Session</h4></div></li>
+          <li><div class="dot">3</div><div><h4>Find Your Pathway</h4></div></li>
+          <li><div class="dot">4</div><div><h4>Begin Your Journey</h4></div></li>
+        </ol>
+      </div>
+
+      <form class="form reveal" id="regForm" novalidate>
+        <div id="formBody">
+          <h3>Initial Inquiry</h3>
+          <p class="sub">Semua isian wajib diisi.</p>
+          <div class="fgrid">
+            <div class="f full"><label for="nama">Nama atlet</label><input id="nama" name="nama" required autocomplete="off"></div>
+            <div class="f"><label for="usia">Usia atlet</label><input id="usia" name="usia" type="number" inputmode="numeric" min="4" max="80" placeholder="mis. 13" required></div>
+            <div class="f"><label for="jk">Jenis kelamin</label><select id="jk" name="jk" required><option value="">Pilih</option><option>Laki-laki</option><option>Perempuan</option></select></div>
+            <div class="f full"><label for="progSel">Program yang diminati</label>
+              <select id="progSel" name="program" required>
+                <option value="">Pilih program</option>
+                <option>Competitive Development</option><option>Performance Squad</option><option>Belum yakin, mohon dibantu</option>
+              </select></div>
+            <div class="f full"><label for="ortu">Nama wali</label><input id="ortu" name="ortu" required autocomplete="name"></div>
+            <div class="f full"><label for="hp">No. WhatsApp</label><input id="hp" name="hp" type="tel" inputmode="tel" placeholder="08xx" required autocomplete="tel"></div>
+          </div>
+          <div class="err" id="err">Mohon lengkapi semua isian.</div>
+          <button class="btn btn-navy submit" type="submit">Start Your Consultation
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="fnote">Data yang kamu isi akan disusun menjadi pesan WhatsApp, sehingga tim Devilrays langsung mengetahui siapa yang menghubungi dan apa kebutuhannya.</p>
+        </div>
+        <div class="done" id="done">
+          <div class="tick"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg></div>
+          <h3 style="color:var(--navy)">Pesanmu sudah siap</h3>
+          <p>Ketuk tombol di bawah untuk melanjutkan percakapan dengan tim Devilrays di WhatsApp.</p>
+          <div class="row">
+            <a class="btn wa" id="waLink" href="#" target="_blank" rel="noopener">Lanjut ke WhatsApp</a>
+            <button class="btn btn-navy" type="button" id="copyBtn">Salin Teks</button>
+          </div>
+          <div class="preview" id="preview"></div>
+          <p style="font-size:13px;margin-top:12px"><a href="#daftar" id="editBtn" style="color:var(--royal)">← Ubah data</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 5b. FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="reveal faq-head">
+        <div class="eyebrow">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-tag">Good Questions. Clear Answers.</div>
+      </div>
+      <div class="faq-list">
+        <details class="qa reveal" open>
+          <summary><span class="qn">01</span><span class="qt">Siapa saja yang bisa bergabung dengan Devilrays Aquatics?</span><span class="qi" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Devilrays terbuka bagi perenang yang ingin berkembang melalui pembinaan renang kompetitif yang terstruktur. Penerimaan mempertimbangkan kemampuan, kesiapan latihan, tujuan pengembangan, serta kesesuaian dengan kelompok latihan yang tersedia.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span class="qn">02</span><span class="qt">Apakah harus sudah pernah mengikuti kompetisi?</span><span class="qi" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Tidak harus. Melalui program Competitive Development, perenang yang sudah mampu berenang secara mandiri dapat mulai membangun fondasi menuju latihan kompetitif. Pengalaman mengikuti kejuaraan bukan persyaratan mutlak untuk bergabung.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span class="qn">03</span><span class="qt">Apa perbedaan Competitive Development dan Performance Squad?</span><span class="qi" aria-hidden="true"></span></summary>
+          <div class="ans"><p><b>Competitive Development</b> berfokus pada pengembangan teknik, kemampuan fisik, dan keterampilan dasar latihan kompetitif.</p><p><b>Performance Squad</b> ditujukan bagi atlet yang telah memiliki fondasi latihan kompetitif dan siap menjalani persiapan yang lebih spesifik berdasarkan target performa serta kebutuhan nomor lomba.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span class="qn">04</span><span class="qt">Bagaimana cara bergabung dengan Devilrays?</span><span class="qi" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Mulai dengan mengisi Initial Inquiry di website, kemudian lanjutkan konsultasi melalui WhatsApp Devilrays. Setelah konsultasi awal, calon atlet dapat diundang mengikuti Trial Session untuk membantu menentukan program pembinaan yang sesuai.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span class="qn">05</span><span class="qt">Apa itu Trial Session?</span><span class="qi" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Trial Session adalah kesempatan bagi calon atlet untuk mengikuti sesi latihan bersama Devilrays. Pelatih akan mengobservasi kemampuan, kesiapan, dan respons atlet terhadap latihan.</p><p>Trial bukan sekadar tes kecepatan, tetapi proses saling mengenal sebelum menentukan jalur pembinaan yang sesuai.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span class="qn">06</span><span class="qt">Siapa yang akan melatih atlet di Devilrays?</span><span class="qi" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Program Devilrays dipimpin oleh Hans Sebastian sebagai Founder &amp; Head Coach, yang bertanggung jawab atas perencanaan, pelaksanaan, dan evaluasi pembinaan atlet.</p><p>Head Coach tetap terlibat langsung dalam latihan, dengan dukungan pelatih pendamping pada sesi tertentu apabila diperlukan.</p></div>
+        </details>
+      </div>
+    </div>
+    <div class="faq-cta reveal">
+      <h3>Still Have Questions?<br><span>Let's Talk About Your Journey.</span></h3>
+      <a href="#daftar" class="btn btn-primary">Start Your Consultation
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. OUR HOME POOL -->
+<section id="lokasi">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Where We Are</div>
+      <h2>Our Home Pool</h2>
+      <p class="lead">Homebase kami di Semarang. Seluruh sesi kolam berlangsung di UNNES Aquatic Swimming Pool, kawasan Sampangan.</p>
+    </div>
+    <div class="loc">
+      <div class="mapcard reveal">
+        <svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,.05)"/></pattern></defs>
+          <rect width="600" height="420" fill="#0B1B3A"/><rect width="600" height="420" fill="url(#grid)"/>
+          <path d="M-20 300 C120 260 200 330 320 280 S520 180 640 210" stroke="#1B3566" stroke-width="26" fill="none"/>
+          <path d="M140 -20 C170 120 120 220 190 440" stroke="#1B3566" stroke-width="18" fill="none"/>
+          <path d="M-20 120 C160 140 380 90 640 120" stroke="#162D58" stroke-width="12" fill="none"/>
+          <path d="M420 -20 C400 140 470 260 440 440" stroke="#162D58" stroke-width="12" fill="none"/>
+          <path d="M0 360 C140 340 260 380 420 350 S560 330 640 340" stroke="#22C1EE" stroke-opacity=".25" stroke-width="6" fill="none"/>
+          <g transform="translate(310 105)">
+            <circle r="70" fill="rgba(34,193,238,.08)"><animate attributeName="r" values="40;80;40" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite"/></circle>
+            <rect x="-46" y="-26" width="92" height="52" rx="6" fill="#22C1EE"/>
+            <g stroke="#0B1B3A" stroke-width="2" opacity=".55"><line x1="-46" y1="-13" x2="46" y2="-13"/><line x1="-46" y1="0" x2="46" y2="0"/><line x1="-46" y1="13" x2="46" y2="13"/></g>
+          </g>
+          <text x="310" y="160" text-anchor="middle" fill="#9BE6FA" font-family="Barlow Condensed, sans-serif" font-size="16" letter-spacing="3" font-weight="700">SAMPANGAN · GAJAHMUNGKUR</text>
+        </svg>
+        <div class="info">
+          <h4>UNNES Aquatic Swimming Pool</h4>
+          <p>Eks kolam Labschool UNNES · Jl. Menoreh Tengah X, Sampangan, Gajahmungkur, Kota Semarang</p>
+          <a class="btn btn-primary" id="mapsBtn" href="https://maps.app.goo.gl/JTcpzxKmE5WVb91j9" target="_blank" rel="noopener">Buka di Google Maps</a>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact-row reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 13c2 0 2-1.5 4-1.5S8 13 10 13s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M7 9V4a2 2 0 0 1 4 0M13 9V4a2 2 0 0 1 4 0"/></svg></div><div><h4>Kolam Latihan</h4><p>UNNES Aquatic Swimming Pool, tempat seluruh sesi air Devilrays berlangsung.</p></div></div>
+        <div class="fact-row reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h4>Jam Latihan</h4><p>Sesi sore 17.00–19.30 WIB. Jadwal per program dibagikan setelah Trial Session.</p></div></div>
+        <div class="fact-row reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 3z"/></svg></div><div><h4>Penerangan Kolam</h4><p>Kolam dilengkapi lampu, sehingga latihan tetap aman hingga malam.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. CLUB ANNOUNCEMENT -->
+<section id="kabar">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Pengumuman & Kalender Klub</div>
+      <h2>Club Announcement</h2>
+      <p class="lead">Kabar terbaru dari klub dan agenda Season 2026–2027. Ketuk tanggal bertanda di kalender untuk melihat detailnya.</p>
+    </div>
+    <div class="news-grid">
+      <div class="ann" id="ann"></div>
+      <div class="cal reveal" id="cal">
+        <div class="cal-head">
+          <h3 id="calTitle">—<small>Season 2026–2027</small></h3>
+          <div class="cal-nav"><button id="prev" aria-label="Bulan sebelumnya">‹</button><button id="next" aria-label="Bulan berikutnya">›</button></div>
+        </div>
+        <div class="grid7" id="dow"></div>
+        <div class="grid7" id="days"></div>
+        <div class="legend" id="legend"></div>
+        <div class="evlist" id="evlist"></div>
+        <div class="cal-note">Tanggal Ramadan & Idulfitri 2027 masih perkiraan sampai ditetapkan pemerintah lewat sidang isbat.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="img/logo-mono-white.png" alt="Devilrays Aquatics">
+        <p style="max-width:360px;margin:0">Klub renang di Semarang. Memberdayakan setiap atlet mengejar potensi terbaiknya, di dalam maupun di luar kolam.</p>
+      </div>
+      <div>
+        <h5>Jelajahi</h5>
+        <a href="#program">Our Program</a><a href="#coach">Meet The Coach</a><a href="#tentang">Devilrays Philosophy</a><a href="#daftar">Your Journey Starts Here</a><a href="#faq">FAQ</a><a href="#lokasi">Our Home Pool</a><a href="#kabar">Club Announcement</a>
+      </div>
+      <div>
+        <h5>Kontak</h5>
+        <div id="contact"></div>
+      </div>
+    </div>
+    <div class="copy"><span>© <span id="yr"></span> Devilrays Aquatics · Semarang</span><span style="font-family:var(--display);letter-spacing:3px;color:var(--cyan)">CHASING LEGACY</span></div>
+  </div>
+</footer>
+
+<script>
+/* Catat error dari data.js supaya bisa ditampilkan di panel #cek-data */
+window.__dataErr=[];
+window.addEventListener("error",function(e){ if(e.filename && /data\.js/.test(e.filename)) window.__dataErr.push("Baris "+e.lineno+": "+e.message); });
+</script>
+<script src="data.js"></script>
+<script>
+/* =========================================================
+   MEMBACA DATA (aman walau data.js berisi salah ketik)
+   ========================================================= */
+const pick=(f,d)=>{ try{ const v=f(); return v===undefined?d:v; }catch(e){ return d; } };
+const DATA_LOADED = pick(()=>typeof EVENTS!=="undefined" && typeof ANNOUNCEMENTS!=="undefined" && typeof CONFIG!=="undefined" && typeof ASSISTANT_COACHES!=="undefined" && (EVENTS,ANNOUNCEMENTS,CONFIG,ASSISTANT_COACHES,true), false);
+const D_CONFIG = Object.assign({whatsapp:"",instagram:"",email:"",googleBusinessUrl:""}, pick(()=>CONFIG,{}));
+const DATE_RE=/^\d{4}-\d{2}-\d{2}$/;
+const DATA_ISSUES=[];
+const cleanList=(name,list,check)=>{
+  if(!Array.isArray(list)){ return []; }
+  return list.filter((x,i)=>{ const p=check(x||{}); if(p){ DATA_ISSUES.push(`${name} ke-${i+1}${x&&x.title?` ("${x.title}")`:x&&x.name?` ("${x.name}")`:""}: ${p}`); return false;} return true; });
+};
+// Kategori kalender
+const CATS = {
+  club:   {label:"Agenda Klub",   color:"#1E5BD8"},
+  meet:   {label:"Kejuaraan",     color:"#E53945"},
+  adjust: {label:"Penyesuaian Jadwal", color:"#F2A93B"},
+  holiday:{label:"Libur Nasional",color:"#8B7CF6"}
+};
+const D_EVENTS = cleanList("Agenda", pick(()=>EVENTS,[]), e=>
+  !DATE_RE.test(e.date||"") ? "tanggal harus format TAHUN-BULAN-TANGGAL" :
+  (e.end && !DATE_RE.test(e.end)) ? "tanggal akhir (end) harus format TAHUN-BULAN-TANGGAL" :
+  (e.end && e.end<e.date) ? "tanggal akhir lebih awal dari tanggal mulai" :
+  !CATS[e.cat] ? `kategori "${e.cat}" tidak dikenal (pakai club, meet, adjust, atau holiday)` :
+  !e.title ? "judul (title) kosong" : "");
+const D_ANN = cleanList("Pengumuman", pick(()=>ANNOUNCEMENTS,[]), a=>
+  !DATE_RE.test(a.date||"") ? "tanggal harus format TAHUN-BULAN-TANGGAL" :
+  !CATS[a.cat] ? `kategori "${a.cat}" tidak dikenal` :
+  !a.title ? "judul (title) kosong" : !a.body ? "isi (body) kosong" : "");
+const D_COACHES = cleanList("Asisten pelatih", pick(()=>ASSISTANT_COACHES,[]), c=> !c.name ? "nama (name) kosong" : "");
+const D_SEASON = pick(()=>SEASON,{start:"2026-11",end:"2027-11"});
+
+/* =========================================================
+   LOGIKA HALAMAN
+   ========================================================= */
+const BULAN = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+const BLN = ["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"];
+const $ = s => document.querySelector(s);
+const pad = n => String(n).padStart(2,"0");
+const iso = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const parse = s => { const [y,m,d] = s.split("-").map(Number); return new Date(y,m-1,d); };
+const fmt = s => { const d=parse(s); return `${d.getDate()} ${BULAN[d.getMonth()]} ${d.getFullYear()}`; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// nav
+const nav=$("#nav"), menu=$("#menu");
+const onScroll=()=>nav.classList.toggle("solid", window.scrollY>40);
+window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+$("#burger").onclick=()=>menu.classList.toggle("open");
+menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>menu.classList.remove("open")));
+
+// reveal
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12}) : null;
+const watch = () => document.querySelectorAll(".reveal:not(.in)").forEach(el=> io ? io.observe(el) : el.classList.add("in"));
+
+// logo tabs
+const LOGOS = {
+  mascot:{src:"img/logo-mascot.webp", alt:"Logo maskot Devilrays Aquatics", use:"Dipakai di seragam, topi renang, merchandise, media sosial, dan spanduk."},
+  mono:{src:"img/logo-mono-white.png", alt:"Logo profesional Devilrays Aquatics", use:"Dipakai di dokumen resmi, kop surat, sertifikat, stempel, dan cetak satu warna."}
+};
+document.querySelectorAll("[data-logo]").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("[data-logo]").forEach(x=>x.classList.toggle("on",x===b));
+  const L=LOGOS[b.dataset.logo]; const img=$("#logoImg"); img.src=L.src; img.alt=L.alt; $("#logoUse").textContent=L.use;
+});
+
+// manta hotspots
+const setSpot=n=>{
+  document.querySelectorAll('.spot').forEach(g=>g.classList.toggle('on',g.dataset.spot===n));
+  document.querySelectorAll('.meaning').forEach(m=>m.classList.toggle('on',m.dataset.m===n));
+};
+document.querySelectorAll('.spot').forEach(g=>{
+  const go=()=>{setSpot(g.dataset.spot); const m=document.querySelector(`.meaning[data-m="${g.dataset.spot}"]`); if(m && window.innerWidth>900) m.scrollIntoView({behavior:'smooth',block:'center'});};
+  g.addEventListener('click',go); 
+});
+document.querySelectorAll('.meaning').forEach(m=>{m.addEventListener('mouseenter',()=>setSpot(m.dataset.m));m.addEventListener('click',()=>setSpot(m.dataset.m));});
+setSpot('1');
+
+// coaching team
+if (D_COACHES.length){
+  const ini=n=>n.trim().split(/\s+/).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+  $("#teamGrid").innerHTML=D_COACHES.map(c=>`
+    <article class="tc reveal">
+      <div class="ph">${c.photo?`<img src="${esc(c.photo)}" alt="${esc(c.name)}">`:`<span>${esc(ini(c.name))}</span>`}</div>
+      <div class="bd"><h4>${esc(c.name)}</h4><div class="rl">${esc(c.role||"Assistant Coach")}</div>${c.bio?`<p>${esc(c.bio)}</p>`:""}</div>
+    </article>`).join("");
+  $("#team").hidden=false;
+}
+if (D_CONFIG.googleBusinessUrl){ const b=$("#mapsBtn"); b.href=D_CONFIG.googleBusinessUrl; b.textContent="Lihat Devilrays di Google"; }
+
+// announcements
+$("#ann").innerHTML = [...D_ANN].sort((a,b)=>(b.pinned?1:0)-(a.pinned?1:0) || b.date.localeCompare(a.date)).map(a=>`
+  <article class="reveal ${a.pinned?"pin":""}">
+    <div class="meta"><span class="tagc" style="--c:${CATS[a.cat].color}">${a.pinned?"📌 ":""}${esc(CATS[a.cat].label)}</span><span>${fmt(a.date)}</span></div>
+    <h4>${esc(a.title)}</h4><p>${esc(a.body)}</p>
+  </article>`).join("");
+
+// calendar
+const evOn = d => D_EVENTS.filter(e=>{ const s=e.date, en=e.end||e.date; return d>=s && d<=en; });
+const today = iso(new Date());
+const [sy,sm]=D_SEASON.start.split("-").map(Number), [ey,em]=D_SEASON.end.split("-").map(Number);
+const minIdx=sy*12+sm-1, maxIdx=ey*12+em-1;
+let cur = (()=>{ const t=new Date(); const i=t.getFullYear()*12+t.getMonth(); return Math.min(Math.max(i,minIdx),maxIdx); })();
+let selDay=null;
+$("#dow").innerHTML=["Sen","Sel","Rab","Kam","Jum","Sab","Min"].map(d=>`<div class="dow">${d}</div>`).join("");
+$("#legend").innerHTML=Object.values(CATS).map(c=>`<span><i style="--c:${c.color}"></i>${c.label}</span>`).join("");
+function renderCal(){
+  const y=Math.floor(cur/12), m=cur%12;
+  $("#calTitle").innerHTML=`${BULAN[m]} ${y}<small>Season 2026–2027</small>`;
+  $("#prev").disabled=cur<=minIdx; $("#next").disabled=cur>=maxIdx;
+  const first=new Date(y,m,1), lead=(first.getDay()+6)%7, days=new Date(y,m+1,0).getDate();
+  let h=""; for(let i=0;i<lead;i++) h+=`<div class="day empty"></div>`;
+  for(let d=1;d<=days;d++){
+    const ds=`${y}-${pad(m+1)}-${pad(d)}`, evs=evOn(ds);
+    const range=evs.some(e=>e.end&&e.cat==="adjust");
+    const cats=[...new Set(evs.map(e=>e.cat))];
+    h+=`<button class="day ${evs.length?"has":""} ${range?"range":""} ${ds===today?"today":""} ${ds===selDay?"sel":""}" data-d="${ds}" ${evs.length?"":"tabindex='-1'"}>${d}${cats.length?`<span class="dots">${cats.map(c=>`<i style="--c:${CATS[c].color}"></i>`).join("")}</span>`:""}</button>`;
+  }
+  $("#days").innerHTML=h;
+  $("#days").querySelectorAll(".day.has").forEach(b=>b.onclick=()=>{selDay=b.dataset.d;renderCal();});
+  // list: events touching this month
+  const mStart=`${y}-${pad(m+1)}-01`, mEnd=`${y}-${pad(m+1)}-${pad(days)}`;
+  const list=D_EVENTS.filter(e=>(e.end||e.date)>=mStart && e.date<=mEnd).sort((a,b)=>a.date.localeCompare(b.date));
+  $("#evlist").innerHTML = list.length ? list.map(e=>{
+    const d=parse(e.date), hl=selDay && evOn(selDay).includes(e);
+    const when = e.end ? `${fmt(e.date)} – ${fmt(e.end)}` : fmt(e.date);
+    return `<div class="ev ${hl?"hl":""}"><div class="d" style="--c:${CATS[e.cat].color}"><b>${d.getDate()}</b><span>${BLN[d.getMonth()]}</span></div><div><h5>${esc(e.title)}</h5><p>${esc(when)} · ${esc(e.note||CATS[e.cat].label)}</p></div></div>`;
+  }).join("") : `<p style="color:var(--muted);font-size:14px;margin:4px 0">Belum ada agenda di bulan ini. Pantau terus pengumuman klub.</p>`;
+}
+$("#prev").onclick=()=>{cur--;selDay=null;renderCal()};
+$("#next").onclick=()=>{cur++;selDay=null;renderCal()};
+renderCal();
+
+// contact
+const c=[];
+if(D_CONFIG.whatsapp) c.push(`<a href="https://wa.me/${D_CONFIG.whatsapp}" target="_blank" rel="noopener">WhatsApp: +${D_CONFIG.whatsapp}</a>`);
+if(D_CONFIG.instagram) c.push(`<a href="https://instagram.com/${D_CONFIG.instagram}" target="_blank" rel="noopener">Instagram: @${D_CONFIG.instagram}</a>`);
+if(D_CONFIG.email) c.push(`<span style="display:block;color:#C3D2EA;padding:3px 0">${esc(D_CONFIG.email)}</span>`);
+c.push(`<span style="display:block;color:#C3D2EA;padding:3px 0">UNNES Aquatic Swimming Pool<br>Sampangan, Semarang</span>`);
+$("#contact").innerHTML=c.join("");
+$("#yr").textContent=new Date().getFullYear();
+
+// registration -> WhatsApp
+const form=$("#regForm");
+let lastMsg="";
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const req=[...form.querySelectorAll("[required]")];
+  const bad=req.filter(i=>!i.value.trim());
+  req.forEach(i=>i.style.borderColor = bad.includes(i) ? "var(--red)" : "");
+  if(bad.length){ $("#err").style.display="block"; bad[0].focus(); return; }
+  $("#err").style.display="none";
+  const v=n=>form.elements[n].value.trim();
+    const lines=[
+    "*INITIAL INQUIRY — DEVILRAYS AQUATICS*","",
+    `Halo Tim Devilrays, saya ${v("ortu")}, wali dari ${v("nama")}. Kami ingin berkonsultasi mengenai program pembinaan di Devilrays.`,"",
+    `Nama atlet: ${v("nama")}`, `Usia: ${v("usia")} tahun`, `Jenis kelamin: ${v("jk")}`, `Program diminati: ${v("program")}`,
+    `Nama wali: ${v("ortu")}`, `No. WhatsApp: ${v("hp")}`,
+    "", "Mohon info langkah selanjutnya untuk Trial Session. Terima kasih 🙏"
+  ];
+  lastMsg=lines.filter((x,i,a)=>!(x===""&&a[i-1]==="")).join("\n");
+  const base = D_CONFIG.whatsapp ? `https://wa.me/${D_CONFIG.whatsapp}` : "https://wa.me/";
+  $("#waLink").href = `${base}?text=${encodeURIComponent(lastMsg)}`;
+  $("#preview").textContent=lastMsg;
+  $("#formBody").style.display="none"; $("#done").classList.add("show");
+  form.scrollIntoView({behavior:"smooth",block:"start"});
+});
+form.querySelectorAll("[required]").forEach(i=>i.addEventListener("input",()=>i.style.borderColor=""));
+$("#editBtn").onclick=e=>{e.preventDefault();$("#done").classList.remove("show");$("#formBody").style.display="";};
+$("#copyBtn").onclick=async()=>{
+  try{ await navigator.clipboard.writeText(lastMsg); $("#copyBtn").textContent="Tersalin ✓"; }
+  catch{ $("#copyBtn").textContent="Salin manual dari kotak di bawah"; }
+  setTimeout(()=>$("#copyBtn").textContent="Salin Teks",2500);
+};
+
+// data fallback for visitors
+if(!DATA_LOADED){
+  $("#ann").innerHTML='<article><h4>Pengumuman sedang diperbarui</h4><p>Silakan cek kembali beberapa saat lagi.</p></article>';
+  console.error("data.js gagal dimuat:", window.__dataErr);
+}
+if(DATA_ISSUES.length) console.warn("Data dilewati:", DATA_ISSUES);
+
+// admin check panel: buka alamat website + #cek-data
+function dataPanel(){
+  let p=document.getElementById("cekData");
+  if(location.hash!=="#cek-data"){ if(p) p.remove(); return; }
+  if(!p){ p=document.createElement("div"); p.id="cekData"; document.body.appendChild(p); }
+  const ok=DATA_LOADED && !DATA_ISSUES.length;
+  const row=(good,txt)=>`<li class="${good?"g":"b"}">${good?"✓":"✕"} ${esc(txt)}</li>`;
+  const issues=[...(window.__dataErr||[]).map(e=>"data.js tidak bisa dibaca — "+e+". Periksa baris itu dan satu baris di atasnya; penyebab paling sering adalah koma atau tanda kutip yang hilang."), ...(!DATA_LOADED && !(window.__dataErr||[]).length ? ["data.js tidak ditemukan atau salah satu bagian (CONFIG, ANNOUNCEMENTS, EVENTS, ASSISTANT_COACHES) hilang"]:[]), ...DATA_ISSUES];
+  p.innerHTML=`<div class="ck-in">
+    <div class="ck-h"><b>Pemeriksa data.js</b><button type="button" onclick="history.replaceState(null,'',location.pathname);dataPanel()">Tutup</button></div>
+    <div class="ck-s ${ok?"g":"b"}">${ok?"Semua data terbaca dengan benar.":"Ada yang perlu diperbaiki di data.js."}</div>
+    ${issues.length?`<div class="ck-t">Masalah</div><ul>${issues.map(i=>row(false,i)).join("")}</ul>`:""}
+    <div class="ck-t">Ringkasan</div>
+    <ul>
+      ${row(DATA_LOADED,"File data.js terbaca")}
+      ${row(DATA_LOADED,`${D_EVENTS.length} agenda kalender tampil`)}
+      ${row(DATA_LOADED,`${D_ANN.length} pengumuman tampil`)}
+      ${row(DATA_LOADED,`${D_COACHES.length} asisten pelatih tampil`)}
+      ${row(!!D_CONFIG.whatsapp,D_CONFIG.whatsapp?`Nomor WhatsApp: +${D_CONFIG.whatsapp}`:"Nomor WhatsApp belum diisi")}
+      ${row(!!D_CONFIG.googleBusinessUrl,D_CONFIG.googleBusinessUrl?"Link Google Business Profile terpasang":"Link Google Business Profile belum diisi (boleh kosong)")}
+    </ul>
+    <div class="ck-n">Panel ini hanya muncul di alamat yang berakhiran #cek-data. Pengunjung biasa tidak melihatnya.</div>
+  </div>`;
+}
+window.addEventListener("hashchange",dataPanel); dataPanel();
+
+watch();
+</script>
+</body>
+</html>
