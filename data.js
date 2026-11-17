@@ -19,7 +19,7 @@
 const CONFIG = {
   // Nomor WhatsApp klub, format internasional tanpa + (mis. "6281234567890").
   // Jika dikosongkan, pendaftar memilih sendiri kontak tujuan di WhatsApp.
-  whatsapp: "+628112931103",
+  whatsapp: "628112931103",
   instagram: "",          // mis. "devilrays.aquatics"
   email: "",              // mis. "halo@devilrays.id"
   // Link Google Business Profile Devilrays (isi setelah profil terverifikasi).
